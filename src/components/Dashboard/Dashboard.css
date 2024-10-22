@@ -1,0 +1,105 @@
+/* Dashboard.css */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --background-color: #f4f7fa;
+  --border-color: #ced4da;
+  --chart-bg-color: #ffffff;
+  --income-color: #28a745; /* Green for income */
+  --expense-color: #dc3545; /* Red for expenses */
+  --text-color: #343a40;
+  --card-bg-color: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px; /* Add padding around the page */
+}
+
+h1 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--text-color);
+  margin: 20px 0 15px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Space out the cards */
+  margin-bottom: 30px;
+}
+
+.card {
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%; /* Width of each card */
+  background-color: var(--card-bg-color);
+  box-shadow: 0 2px 10px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 20px var(--shadow-color); /* Stronger shadow on hover */
+}
+
+.card h3 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  color: var(--text-color);
+  font-size: 26px;
+  margin: 0; /* Remove default margin */
+}
+
+.chart-container {
+  margin-top: 20px;
+}
+
+.recharts-tooltip {
+  background: var(--chart-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.recharts-cartesian-axis-tick {
+  fill: var(--text-color);
+}
+
+.recharts-text {
+  fill: var(--text-color);
+}
+
+@media (max-width: 900px) {
+  .card {
+      width: 45%; /* Adjust card width for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+      width: 100%; /* Full width on mobile */
+      margin-bottom: 15px; /* Space between cards */
+  }
+
+  .card-container {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center cards */
+  }
+}

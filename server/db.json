@@ -1,0 +1,44 @@
+{
+  "expenses": [
+    {
+      "id": "913b",
+      "title": "clothes",
+      "amount": 5000,
+      "date": "2021-01-22T00:00:00.000Z",
+      "type": "income",
+      "category": "Entertainment"
+    },
+    {
+      "id": "913b",
+      "title": "clothes",
+      "amount": 5000,
+      "date": "2021-01-22T00:00:00.000Z",
+      "type": "income",
+      "category": "Entertainment"
+    },
+    {
+      "id": "af4b",
+      "title": "groceriece",
+      "amount": 50,
+      "date": "2022-12-22T00:00:00.000Z",
+      "type": "income",
+      "category": "Groceries"
+    },
+    {
+      "id": "af4b",
+      "title": "groceriece",
+      "amount": 50,
+      "date": "2022-12-22T00:00:00.000Z",
+      "type": "income",
+      "category": "Groceries"
+    }
+  ],
+  "users": [
+    {
+      "id": "bf0c",
+      "name": "Daxit Moliya",
+      "email": "daxiymoliya07@gmail.com",
+      "password": "123456"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+/* Layout Styles */
+.layout {
+  display: flex; /* Use flexbox for layout */
+  font-family: 'Arial', sans-serif; /* Set a modern font */
+  height: 100vh; /* Full height of viewport */
+  background-color: #f1f1f1; /* Light gray background for entire app */
+}
+
+.sidebar {
+  width: 220px; /* Sidebar width */
+  height: 100%; /* Full height */
+  background-color: #ffffff; /* White background color for sidebar */
+  color: #343a40; /* Dark text color for contrast */
+  padding: 20px; /* Padding */
+  position: fixed; /* Fix sidebar on left */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: width 0.3s ease; /* Smooth transition on width */
+}
+
+.sidebar:hover {
+  width: 240px; /* Expand sidebar on hover */
+}
+
+.sidebar-logo {
+  font-size: 24px; /* Logo font size */
+  font-weight: bold; /* Bold font */
+  margin-bottom: 20px; /* Space below logo */
+  text-align: center; /* Center the logo */
+  color: #007bff; /* Classic blue color */
+  transition: color 0.3s; /* Smooth transition for color */
+}
+
+.sidebar-logo:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.sidebar-nav {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.nav-item {
+  margin: 15px 0; /* Space between nav items */
+}
+
+.nav-link {
+  color: #343a40; /* Dark text color for links */
+  text-decoration: none; /* Remove underline */
+  padding: 10px; /* Padding around link */
+  border-radius: 4px; /* Slightly rounded corners */
+  display: block; /* Block element for full clickable area */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  background-color: #e9ecef; /* Light background on hover */
+  color: #007bff; /* Change text color on hover */
+}
+
+/* Active Link */
+.nav-link.active {
+  background-color: #007bff; /* Different background for active link */
+  color: white; /* White text for active link */
+}
+
+.content {
+  margin-left: 240px; /* Adjust content area margin for sidebar */
+  padding: 20px; /* Padding for content area */
+  flex-grow: 1; /* Allow content area to grow */
+  background-color: #ffffff; /* White background for content area */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for content */
+  border-radius: 8px; /* Rounded corners for content */
+  transition: margin-left 0.3s ease; /* Smooth transition for content margin */
+}
+
+/* Summary Boxes */
+.summary-boxes {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space between boxes */
+  margin-bottom: 20px; /* Space below boxes */
+}
+
+.summary-box {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  padding: 20px; /* Padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  flex: 1; /* Take equal space */
+  margin: 0 10px; /* Margin between boxes */
+  transition: transform 0.3s; /* Animation effect */
+}
+
+.summary-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Table Styles */
+table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Remove spacing between cells */
+  margin-top: 20px; /* Space above table */
+}
+
+th, td {
+  padding: 12px; /* Padding inside cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #dee2e6; /* Border for rows */
+}
+
+th {
+  background-color: #f8f9fa; /* Light background for header */
+  color: #495057; /* Darker text color for header */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Light background on row hover */
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s; /* Smooth background change */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
